@@ -3,9 +3,9 @@
 This project is a light-weighted, Linux based webserver that receives http requests and opens a html page to users who connect to the server.
 ## Technical details
 ### Concurrency
-Uses multithreading and I/O multiplexing to achive high concurrency. The server is capable of connecting to over 9000 users at the same time under stress test.
-### Multithreading
-Uses thread pool to achieve multithreading.
+Uses both multi-threading and I/O multiplexing to achive high concurrency. The server is capable of connecting to over 9000 users at the same time under stress test.
+### Multi-threading
+Uses thread pool to achieve multi-threading.
 ### I/O multiplexing
 Uses epoll proractor pattern, supports both epoll ET mode and LT mode.
 ### Processing http request messages
